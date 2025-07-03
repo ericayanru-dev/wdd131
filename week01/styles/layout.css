@@ -25,6 +25,10 @@ nav{
     padding: 1rem;
     border-radius: 0.5rem;
 }
+nav a{
+    color: azure;
+    text-decoration: none;
+}
 
 main{
     display: grid;
