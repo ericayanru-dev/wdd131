@@ -107,3 +107,6 @@ footer{
 section h1, article h1 {
   font-size: 2rem; /* or your preferred size */
 }
+section h2, article h2 {
+    font-size: 1.5rem;
+}
