@@ -104,3 +104,6 @@ footer{
     background-color: rgb(154, 197, 197);
     padding: 2rem;
 }
+section h1, article h1 {
+  font-size: 2rem; /* or your preferred size */
+}
