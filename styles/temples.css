@@ -33,6 +33,10 @@ header h1{
 #menu.show::before{
     content:"✖"
 }
+#menu:hover{
+    background-color: brown;
+    border-radius: 0.5rem;
+}
 nav {
     display: none;
     flex-direction: column;
