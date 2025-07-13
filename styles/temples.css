@@ -76,6 +76,9 @@ main h2{
     max-width: 300px;
     width: 100%;
 }
+img{
+    max-width: 200px;
+}
 footer{
     margin: 0 auto;
     max-width: 100%;
