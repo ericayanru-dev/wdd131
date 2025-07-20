@@ -1,6 +1,7 @@
 :root{
     --primary-color: aliceblue;
     --secondary-color: black ;
+    --body-font: "Roboto", sans-serif;
 }
 
 *{
