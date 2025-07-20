@@ -67,6 +67,18 @@ footer{
     text-align: center;
 }
 
+#area,
+#population,
+#capital,
+#languages,
+#currency,
+#timezone,
+#callingcode,
+#tld {
+  display: inline-block;
+  min-width: 100px;
+}
+
 
 
 
