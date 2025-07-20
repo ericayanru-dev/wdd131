@@ -123,6 +123,10 @@ h1::after {
         right: 3rem;
     }
 
+    .weather img{
+        display: none;
+    }
+
     h2{
         background-color: var(--secondary-color);
         color: var(--primary-color);
