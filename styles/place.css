@@ -84,6 +84,10 @@ footer{
   min-width: 100px;
 }
 
+h1::after {
+    content: "";
+}
+
 
 
 
@@ -107,6 +111,9 @@ footer{
         background-color: var(--primary-color);
         color: var(--secondary-color);
     }
+
+    h1::after {
+    content: " 🌟";}
 
     .weather{
         background-color: var(--primary-color);
