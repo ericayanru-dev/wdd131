@@ -90,6 +90,10 @@ h1::before {
     content: "";
 }
 
+.weather h2::before{
+content: "";
+}
+
 
 
 
@@ -134,4 +138,7 @@ h1::before {
         color: var(--primary-color);
     }
     
+    .weather h2::before{
+    content: "🌤️";
+}
 }
