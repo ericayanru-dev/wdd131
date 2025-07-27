@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album Enhancement</title>
+    <meta name="description" content="Picture Album | Eric Ayanru">
+    <meta name="author" content="Eric Ayanru">
+    <meta name="description" content="Picture Album Enhancement">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1> Temple Album</h1>
+        <button id="menu">Menu</button>
+        <nav class="filters" role="navigation">
+            <button id="home">Home</button>
+            <button id="old">Old</button>
+            <button id="new">New</button>
+            <button id="large">Large</button>
+            <button id="small">Small</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="temples-container" id="temples-container"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyYear"></span> Eric Ayanru Nigeria</p>
+        <p>Last Modification:<span id="lastModification"></span></p>
+    </footer>
+</body>
+</html>
