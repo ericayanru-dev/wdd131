@@ -20,8 +20,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ==== COMMON STYLES (Both Desktop & Mobile) ==== */
-.container, .faq, .contact-info, .resource-section, .intro{
+/* ==== COMMON STYLES ==== */
+.container, .faq, .contact-info, .resource-section, .intro {
   width: 90%;
   max-width: var(--max-width);
   margin: 0 auto;
@@ -29,15 +29,13 @@ body {
 }
 
 .header-inner {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: .5rem 0;
-  box-sizing: border-box;
-  box-shadow: 0px 5px 15px var(--dark-text);
-  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px var(--dark-text);
+  border-radius: .5rem;
   background: var(--primary-color);
   color: #fff;
 }
@@ -50,49 +48,36 @@ body {
   color: inherit;
 }
 
-.site-title {
-  font-family: var(--heading-font);
-  font-weight: 700;
-}
-
+.site-title { font-family: var(--heading-font); font-weight: 700; }
 .logo { border-radius: 6px; }
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-.head{
-  padding: 0.5rem 0;
+
+.main-nav { display: flex; align-items: center; }
+
+.head {
+  padding: 0 .5rem;
   text-decoration: none;
   font-size: 16px;
   color: var(--light-bg);
   margin: 0 20px;
-  padding: 0 1rem;
 }
-.head:hover{
-  border-bottom: 0.2rem solid var(--accent-color);
+.head:hover {
+  border-bottom: .2rem solid var(--accent-color);
   color: var(--dark-text);
-  background-color: var(--light-bg);
+  background: var(--light-bg);
 }
-.nav-toggle{
+
+.nav-toggle {
   width: 40px;
   height: 40px;
   border-radius: 30%;
-  background:none;
+  background: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  
 }
-.material-icons{
-  font-size: 25px;
-  width: 100%;
-  color: var(--light-bg);
-}
-
-.nav-toggle:hover{
-  background-color: var(--accent-color);
-}
+.nav-toggle:hover { background-color: var(--accent-color); }
+.material-icons { font-size: 25px; color: var(--light-bg); }
 
 /* Hero */
 .hero {
@@ -100,11 +85,7 @@ body {
   padding: 2rem 0;
   text-align: center;
 }
-.hero .btn {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+.hero .btn { display: flex; justify-content: space-around; flex-wrap: wrap; }
 .hero .btn1, .btn2 {
   background: var(--accent-color);
   color: #fff;
@@ -115,31 +96,28 @@ body {
 }
 
 /* What you'll learn */
-.what-you-learn {
-  margin-top: 1.5rem;
-  text-align: center;
-}
+.what-you-learn { margin-top: 1.5rem; text-align: center; }
 .topic-grid {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-.learn-card{
+.learn-card {
   background-color: var(--light-bg);
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   box-shadow: 0 2px 6px;
   padding: 15px 25px;
-  transition: transform 0.2s ease;
+  transition: transform .2s ease, background-color .2s ease;
 }
-.learn-card:hover{
+.learn-card:hover {
   transform: translateY(-5px);
   background-color: var(--accent-color);
 }
+
 .language-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  justify-content: center;
   background: #fff;
   padding: 1rem;
   border-radius: 8px;
@@ -151,7 +129,7 @@ body {
   color: var(--primary-color);
 }
 
-/* other sections */
+/* Cards & Buttons */
 .card {
   background: #fff;
   padding: 1rem;
@@ -173,8 +151,8 @@ body {
   cursor: pointer;
 }
 
+/* Forms */
 .contact-intro { text-align: center; }
-
 .ai-form {
   width: 90%;
   max-width: var(--max-width);
@@ -185,11 +163,7 @@ body {
   text-align: center;
   grid-template-columns: repeat(auto-fit, minmax(300px,3fr));
 }
-
-label {
-  display: block;
-  margin-bottom: .5rem;
-}
+label { display: block; margin-bottom: .5rem; }
 input, textarea, select {
   width: 90%;
   padding: .6rem;
@@ -198,10 +172,8 @@ input, textarea, select {
   margin-top: .25rem;
 }
 
-.topics-section, .resources-section {
-  padding: 3rem 1rem;
-}
-
+/* Sections */
+.topics-section, .resources-section { padding: 3rem 1rem; }
 .topics-grid, .resources-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -209,51 +181,36 @@ input, textarea, select {
   max-width: 1100px;
   margin: 0 auto;
 }
-
 .topic-card, .resource-card {
-  background: white;
+  background: #fff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   text-decoration: none;
   color: var(--dark-text);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform .2s, box-shadow .2s;
 }
-
-.topic-card, .resource-card:hover {
+.resource-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.12);
 }
+.topic-card h2 { color: var(--primary-color); margin-bottom: .5rem; }
 
-.topic-card h2 {
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
-
-a{
+a {
   text-decoration: none;
   color: var(--dark-text);
   font-weight: bold;
   border-radius: 12px;
-  text-decoration: none;
-  color: var(--dark-text);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform .2s, box-shadow .2s;
 }
-
-a:hover{
+.topic-card:hover,a:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 10px var(--accent-color);
 }
 
-.resource-section li{
-  color: var(--dark-text);
+.resource-section li { color: var(--dark-text); }
 
-}
-
-
-
-
-/* footer */
+/* Footer */
 .site-footer {
   background: #222;
   color: #fff;
@@ -261,26 +218,15 @@ a:hover{
   margin-top: 2rem;
   text-align: center;
 }
-.site-footer a{
-  color: var(--primary-color);
-}
+.site-footer a { color: var(--primary-color); }
 
-/* ==== DESKTOP VIEW ==== */
+/* ==== MEDIA QUERIES ==== */
 @media (min-width: 800px) {
-  .topic-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  #nav-toggle {
-    display: none;
-  }
-  #main-nav {
-    display: flex;
-    box-shadow: none;
-  }
-  
+  .topic-grid { grid-template-columns: repeat(3, 1fr); }
+  #nav-toggle { display: none; }
+  #main-nav { display: flex; box-shadow: none; }
 }
 
-/* ==== MOBILE VIEW ==== */
 @media (max-width: 799px) {
   #main-nav {
     display: none;
@@ -292,17 +238,10 @@ a:hover{
   #main-nav.show {
     position: absolute;
     display: grid;
-    grid-template-columns: 1;
-    align-items: center;
     top: 98px;
     right: 10px;
-    border-radius: 0.5rem;
-    box-shadow: 0px 5px 15px var(--dark-text);
+    border-radius: .5rem;
+    box-shadow: 0 5px 15px var(--dark-text);
   }
-  #nav-toggle {
-    display: flex;
-  }
-  .header-inner {
-    align-items: center;
-  }
+  #nav-toggle { display: flex; }
 }
